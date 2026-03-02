@@ -1,13 +1,15 @@
 import java.util.Scanner;
 public class sumOfTwoNo{
     public static void main() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter first number: ");
+        try (Scanner sc = new Scanner(System.in)){
+            System.out.print("Enter first number: ");
         int num1 = sc.nextInt();
         System.out.print("Enter second number: ");
         int num2 = sc.nextInt();
         int sum = num1 + num2;
         System.out.println("The sum is: " + sum);
         sc.close();
+        }
+        
     }
 }
